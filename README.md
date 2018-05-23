@@ -2,6 +2,15 @@
 
 Laravel implementation of REST API for PayU service
 
+```
+composer require yorki/laravel-payu
+```
+
+To publish config
+```
+php artian vendor:publish --provider="Yorki\Payu\ServiceProvider"
+```
+
 #### Example of implementation in our controller
 ```php
 <?php
