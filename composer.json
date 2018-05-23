@@ -1,0 +1,46 @@
+{
+  "name": "yorki/laravel-payu",
+  "description": "PayU client for Laravel",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "payu"
+  ],
+  "authors": [
+    {
+      "name": "Norbert Pabisz",
+      "email": "yorki.ogame@gmail.com"
+    }
+  ],
+  "homepage": "https://github.com/Yorkii/laravel-payu",
+  "require": {
+    "php": ">=7.0",
+    "illuminate/support": ">=5.5",
+    "illuminate/contracts": ">=5.5",
+    "illuminate/view": ">=5.5",
+    "illuminate/container": ">=5.5",
+    "illuminate/console": ">=5.5",
+    "illuminate/cache": ">=5.5",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Yorki\\Payu\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Yorki\\Payu\\Test\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Yorki\\Payu\\ServiceProvider"
+      ]
+    }
+  }
+}
